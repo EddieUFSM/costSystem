@@ -1,5 +1,44 @@
 # Sistema de custos integrados
 
+## Sistema
+
+### Schemas
+
+- [] Custeio por absorção integral Pleno
+    * Formação de preço de custo produto (UN)
+        * A - Soma Custos e Rateio (tipo) por unidade 
+        * B - Soma Custos Direto por unidade
+        * C - Soma A + B
+
+    * [] Formação de valor de estoque
+        * Soma dos produtos não vendidos e fabricados
+
+    * [] Preço de venda
+
+    * [] Formação de valor de lucro
+        * Soma dos produtos vendidos menos o custo
+
+- [] Produto (categoria, preço-unidade, preço-lucro-Bruto, preço-venda)
+    * Tipo (fabricado | revenda)
+    * Classificação (estoque | venda | perda)
+    * Custo Direto
+        * Materiais
+        * Equipamentos
+            * Manutenção
+        * Mão-de-Obra
+    * Custo Indireto
+        * Custo administrativo
+        * Custo de vendas
+    * Porcentagem de incorporação (Baseada no custo)
+    - [] Processo
+        processo atual de produção
+
+- [] Departamentos
+    * Produção
+
+- [] Rateio
+- [] Rateio Ponderado
+
 ## Definições
 
 ### Tipos de custo
@@ -11,7 +50,7 @@
 * Custos Diretos
     Custos que incidem sobre o produto/serviço Mão de Obra, Materiais, Equipamentos
 * Custos Indiretos
-    Custos que não estão diretamente ligados com a atividade-fim#
+    Custos que não estão diretamente ligados com a atividade-fim
 
 
 ### Custeio por absorção
@@ -21,12 +60,13 @@
     * Integral
     A totalidade de custos de produção deve ser absorvido pelo produto
 
-    * Total
+    * Total ou Ideal
     A totalidade de custos de produção sem os custos dos insumos utilizados de forma não eficiente (desperdícios).
 
-    * Ideal
-    A totalidade de custos de produção a també os gastos fixos de administração e vendas devem ser absorvidos pelo produto.
     * Pleno
+    A totalidade de custos de produção a também os gastos fixos de administração e vendas devem ser absorvidos pelo produto.
+
+    
 
 ### Custeio Variável ou Direto
 
@@ -34,7 +74,7 @@
 
 * custos fixos, mesmo aqueles que podem ser indentificados nos produtos, devem ser considerados na apuração do resultado do período 
 
-### Custeio por Atividades
+### Custeio por Atividades (ABC)
 
 * O principal Objetivo do custeio baseado em atividades é mensurar o custo total dos produtos observando detalhadamente os custos indiretos dos processos de transformação.
 
