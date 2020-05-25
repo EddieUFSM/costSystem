@@ -18,15 +18,15 @@
 
 * Custos de bens e serviços absorvem todos os custos, sejam eles diretos, indiretos, de comportamento fixo, ou variável.
 
-** Integral
+    * Integral
     A totalidade de custos de produção deve ser absorvido pelo produto
 
-** Total
+    * Total
     A totalidade de custos de produção sem os custos dos insumos utilizados de forma não eficiente (desperdícios).
 
-** Ideal
+    * Ideal
     A totalidade de custos de produção a també os gastos fixos de administração e vendas devem ser absorvidos pelo produto.
-** Pleno
+    * Pleno
 
 ### Custeio Variável ou Direto
 
