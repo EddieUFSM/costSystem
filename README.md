@@ -4,21 +4,21 @@
 
 ### Schemas
 
-- [] Custeio por absorção integral Pleno
+- [ ] Custeio por absorção integral Pleno
     * Formação de preço de custo produto (UN)
         * A - Soma Custos e Rateio (tipo) por unidade 
         * B - Soma Custos Direto por unidade
         * C - Soma A + B
 
-    * [] Formação de valor de estoque
+    - [ ] Formação de valor de estoque
         * Soma dos produtos não vendidos e fabricados
 
-    * [] Preço de venda
+    - [ ] Preço de venda
 
-    * [] Formação de valor de lucro
+    - [ ] Formação de valor de lucro
         * Soma dos produtos vendidos menos o custo
 
-- [] Produto (categoria, preço-unidade, preço-lucro-Bruto, preço-venda)
+- [ ] Produto (categoria, preço-unidade, preço-lucro-Bruto, preço-venda)
     * Tipo (fabricado | revenda)
     * Classificação (estoque | venda | perda)
     * Custo Direto
@@ -30,14 +30,14 @@
         * Custo administrativo
         * Custo de vendas
     * Porcentagem de incorporação (Baseada no custo)
-    - [] Processo
+    - [ ] Processo
         processo atual de produção
 
-- [] Departamentos
+- [ ] Departamentos
     * Produção
 
-- [] Rateio
-- [] Rateio Ponderado
+- [ ] Rateio
+- [ ] Rateio Ponderado
 
 ## Definições
 
