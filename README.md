@@ -2,27 +2,87 @@
 
 ## Sistema
 
-### Schemas
+### Overview do Sistema
 
-- [ ] Custeio por absorção integral Pleno
-    * Formação de preço de custo produto (UN)
-        * A - Soma Custos e Rateio (tipo) por unidade 
-        * B - Soma Custos Direto por unidade
-        * C - Soma A + B
+#### Custeio por absorção integral Pleno 
 
-    - [ ] Formação de valor de estoque
-        * Soma dos produtos não vendidos e fabricados
+##### Modelo - Indústria
 
-    - [ ] Preço de venda
+###### Schemas
 
-    - [ ] Formação de valor de lucro
-        * Soma dos produtos vendidos menos o custo
+- [ ] Custo Produto Previsto {
+
+
+    }
+
+- [ ] Custo Produto Real {
+        Número de produtos total por período
+
+    }
+
+- [ ] Matéria Prima {
+    Valor de compra:
+    Quantidade que produz:
+        Tipo: Number
+    Validade:
+        Tipo: Date
+    Lote:
+        Tipo: String
+    
+}
+
+- [ ] Equipamentos
+
+- [ ] 
 
 - [ ] Produto (categoria, preço-unidade, preço-lucro-Bruto, preço-venda)
-    * Tipo (fabricado | revenda)
+    * Fase (produção | estoque | transporte | conclusão de venda)
+    * Formação de preço
+        * Materia-prima 
+            * Tipo: Number
+            * Descrição: Valor de Custo Unitário
+
+        * Manutenção Equipamentos
+            * Tipo: Object
+                * Custo
+                    * Tipo: Number
+                * Garantia
+                    * Tipo: Date
+                * Descrição: Valor de Custo dividido no período de garantia
+
+        * Mão-de-Obra
+            Tipo: Object
+                * Custo
+                    * Tipo: Number
+                * Garantia
+                    * Tipo: Date
+                * Descrição: Valor de Custo dividido no período de garantia
+    * Custo Indireto
+        * Custo administrativo
+        * Custo de vendas
+    * Porcentagem de incorporação (Baseada no custo)
+    - [ ] Processo
+        processo atual de produção
+
+##### Modelo - Comércio
+
+- [ ] Formação de preço de custo produto (UN)
+    * A - Soma Custos e Rateio (tipo) por unidade 
+    * B - Soma Custos Direto por unidade
+    * C - Soma A + B
+
+- [ ] Formação de valor de estoque
+    * Soma dos produtos não vendidos e fabricados
+
+- [ ] Preço de venda
+
+- [ ] Formação de valor de lucro
+    * Soma dos produtos vendidos menos o custo
+
+- [ ] Produto (categoria, preço-unidade, preço-lucro-Bruto, preço-venda)
     * Classificação (estoque | venda | perda)
     * Custo Direto
-        * Materiais
+        * Materia-prima
         * Equipamentos
             * Manutenção
         * Mão-de-Obra
@@ -35,6 +95,8 @@
 
 - [ ] Departamentos
     * Produção
+    * marketing
+    * vendas
 
 - [ ] Rateio
 - [ ] Rateio Ponderado
